@@ -1,0 +1,91 @@
+
+------------------------CREATING A REACT APP------------------
+
+to create a react app we use the following code:-
+
+select the directory where you want to place the react app and type the following command:-
+1)Open command prompt
+2)cd Desktop
+3)npx create-react-app my_react
+
+in above the my_react is the name of the folder which is the react app 
+
+-------------------------LAUNCHING THE REACT APP----------------
+in order to launch the react app we just follow the following steps:-
+1)cd my_react
+2)npm start
+
+This will automatically launch the react application in the browser with the address 
+       "localhost:3000"
+
+-------------------IMPORTANT NOTES----------------------
+
+to write the code in the react we should need to know about the ES6 scripting syntax
+
+every part in the react is used as a component with multiple functions in it.
+
+--------------first editing the page into the hello world------------
+
+to edit go to the App.js file as it is the place where the component of the id "root" is returning
+the data 
+
+REPLACE THE CLASS AS FOLLOWS:-
+
+class App extends Component {
+  render() {
+    //here we are returning the basic html code as the response to the index.html div tag
+    return (
+      <div className="App">
+        <h1>hello world</h1>
+      </div>
+    );
+  }
+}
+
+
+this will automatically change the page as the hello world
+
+---------------VARIABLE DECLERATIONS IN THE JS------------
+to declare a variable we use the let,const functions 
+to access the variables in the html pages we just place the variable in the flower braces.
+
+let x=5;
+const v=5;
+these produces the same result 5
+EG:-
+
+class App extends Component {
+  render() {
+    //here we are returning the basic html code as the response to the index.html div tag
+    const name = 'hello this is chandu';
+    return (
+      <div className="App">
+        <h1>{name}</h1>
+      </div>
+    );
+  }
+}
+
+in above i declared a variable with constant function named as "name" 
+
+when we save and runt the react page we get the data present in the name
+
+------------------CREATING THE COMPONENTS ----------------
+
+To create a component we should create the componnt in the js file such as App.js 
+
+the components are build with the classes.The following is the basic syntax:-
+
+class class_name extends Component{
+	render(){
+	return(
+	<div></div>
+	);
+	}
+}
+
+in above render() is a function in the class app.
+
+----------------TAKING PARAMETERS INTO THE COMPONENTS--------
+
+this.props is a object which helps us to pass the parameters through the classes from main class to sub class
